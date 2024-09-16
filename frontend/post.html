@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post - My Blog</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html">My Blog</a>
+      </div>
+      <div class="nav-btn">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html" id="signinLink">Sign In</a>
+        <a href="signup.html" id="signupLink">Sign Up</a>
+        <a href="create-post.html" id="createPostLink" style="display: none"
+          >Create Post</a
+        >
+        <a href="#" id="logoutBtn" style="display: none">Logout</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section id="postDetails">
+        <h1 id="postTitle"></h1>
+        <p id="postContent"></p>
+        <button id="deletePostBtn" class="delete-btn" style="display: none">
+          Delete Post
+        </button>
+      </section>
+
+      <section class="create-post" id="updatePostSection">
+        <h1>Update Post</h1>
+        <form id="updatePostForm">
+          <input type="hidden" id="postId" />
+          <input
+            type="text"
+            id="updatePostTitle"
+            placeholder="Post Title"
+            required
+          />
+          <textarea
+            id="updatePostContent"
+            placeholder="Post Content"
+            required
+          ></textarea>
+          <button type="submit" class="submit-btn">Update Post</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer-description">
+      <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

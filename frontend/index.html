@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My Blog</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html">100xBlogs</a>
+      </div>
+      <div class="nav-btn">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html" id="signinLink">Sign In</a>
+        <a href="signup.html" id="signupLink">Sign Up</a>
+        <a href="create-post.html" id="createPostLink" style="display: none"
+          >Create Post</a
+        >
+        <a href="#" id="logoutBtn" style="display: none">Logout</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section
+        style="
+          padding: 5rem 2rem;
+          background-color: #14141b;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+        "
+      >
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+
+        <dotlottie-player
+          src="https://lottie.host/ae3d742e-9d6d-49f5-972c-d3cf2235d937/MVfM5Dw50h.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></dotlottie-player>
+
+        <div
+          style="display: flex; flex-direction: column; align-items: flex-start"
+        >
+          <h1
+            style="
+              font-family: 'Space Grotesk', sans-serif;
+              font-size: 4.5rem;
+              font-weight: 700;
+              background: linear-gradient(
+                78deg,
+                rgb(255, 255, 255) 9.07%,
+                rgba(255, 255, 255, 0.9) 50%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              margin: 0;
+            "
+          >
+            Welcome to My Blog
+          </h1>
+          <p style="font-size: 1.3rem; margin-top: 1rem">
+            Discover and share amazing posts!
+          </p>
+        </div>
+      </section>
+
+      <section class="post-container" id="postContainer">
+        <!-- Posts will be dynamically added here by script.js -->
+      </section>
+    </main>
+
+    <footer class="footer-description">
+      <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

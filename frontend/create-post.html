@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">MyBlog</a>
+        </div>
+        <div class="nav-btn">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="create-post.html" class="nav-btn-item">Create Post</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="create-post">
+            <h1 class="title">Create New Post</h1>
+            <form id="createPostForm">
+                <input type="text" id="postTitle" placeholder="Post Title" required />
+                <textarea id="postContent" placeholder="Post Content" rows="10" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-description">
+            <p>© 2024 MyBlog. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
